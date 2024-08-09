@@ -45,11 +45,6 @@ class GerenciamentoHotel {
         }
     }
 
-    void fazerReserva() {
-
-    }
-
-
     public static void main(String[] args) {
         GerenciamentoHotel hotel = new GerenciamentoHotel();
         Scanner scanner = new Scanner(System.in);
@@ -80,7 +75,7 @@ class GerenciamentoHotel {
                     String email  = scanner.nextLine();
 
                     Hospede hospede = null;
-//////reveja
+
                     for (Hospede h : hotel.hospedes) {
                         if (h.cpf.equals(cpf)) { // Compara as Strings
                             hospede = h;
